@@ -46,9 +46,9 @@ layout: default
 	    </div>
   </div>
 
-<div id="container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
+<script src="https://billts.site/js/gitment.js"></script>
 <script>
 	var gitment = new Gitment({
 		id: '{{ page.date }}',
@@ -59,7 +59,7 @@ layout: default
 			client_secret: '107f18a0ed7c8c2ee909a8e331df88690de3216d',
 		},
 	});
-	gitment.render('container')
+	gitment.render('gitmentContainer');
 </script>
 
   {% include dashang.html %}
