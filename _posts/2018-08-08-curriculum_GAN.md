@@ -15,10 +15,10 @@ description:
 让GAN的训练更稳定生成的样本更加多样性一直是GAN发展的主要动力，[WGAN](https://arxiv.org/abs/1701.07875)、[LSGAN](https://arxiv.org/abs/1611.04076)、
 [WGAN-GP](https://arxiv.org/abs/1704.00028)都是在GAN的损失函数上采取改进，将衡量真实和生成样本的分布的JS距离换为更加优越的衡量标准。
 WGAN就是在GAN的基础上改进的比较成功的一种。WGAN利用Wasserstein距离代替JS距离，从而避免了一定的梯度消失问题，这也为很多GAN模型的扩展提供了指导。
-详细的关于WGAN的知识，可以参看我之前的[博客](http://www.twistedwg.com/2018/01/31/WGAN.html)。
+详细的关于WGAN的知识，可以参看我之前的[博客](http://veigar1992.github.io/2018/01/31/WGAN.html)。
 
 WGAN-GP是在WGAN的基础上改进的，WGAN在保证Lipschitz限制条件时，作者是采用将限制判别器神经网络的所有参数 (这里指权重w)不超过某个范围[-c,c]。
-这样做带来了参数上的两极化，为了改进WGAN，WGAN-GP提出了梯度惩罚概念用于满足Lipschitz限制条件。具体展开描述，可以参看我之前的[博客](http://www.twistedwg.com/2018/02/02/WGAN-GP.html)。
+这样做带来了参数上的两极化，为了改进WGAN，WGAN-GP提出了梯度惩罚概念用于满足Lipschitz限制条件。具体展开描述，可以参看我之前的[博客](http://veigar1992.github.io/2018/02/02/WGAN-GP.html)。
 Curriculum GANs其是在WGAN-GP的基础上改进的，但是思路是沿袭WGAN所以也称之为WGAN-C。
 
 在训练GAN上有很多trick，比如如何衡量生成器和判别器的强弱从而控制一方的能力；在判别器中加入minibatch，用于衡量更多的样本，从而丰富生成的多样性；

@@ -15,9 +15,9 @@ description:
 跨模态生成旨在基于不同模态的信息合成一种模态或几种模态数据。文本到图像、文本到视频、音频到图像、音频到视频等这种单向或双向的生成都是跨模态生成的案例。
 在我的阅读范畴下，文本到图像的代表作是[GAN-CLS](https://arxiv.org/abs/1605.05396)这篇文章对于跨模态生成的启发性是很大的，
 特别是文章中不同模态在GAN中判别器下配对的思想；文本到视频的代表作有[To Create What You Tell(TGANs-C)](https://arxiv.org/abs/1804.08264)，
-这篇文章我写过解读，感兴趣的可以移步[这里](http://www.twistedwg.com/2018/09/18/TGANs-C.html)，文章在不同判别器的设计上让人影响深刻；
-音频到图像的代表作有[CMAV](https://arxiv.org/abs/1704.08292)，文章首次实现音频和图像的模态转换生成，论文解读在[这里](http://www.twistedwg.com/2018/04/18/CM-AV.html)；
-音频到视频的代表作有[Visual to Sound](https://arxiv.org/abs/1712.01393)，论文解读在[这里](http://www.twistedwg.com/2018/08/11/VEGAS.html)。
+这篇文章我写过解读，感兴趣的可以移步[这里](http://veigar1992.github.io/2018/09/18/TGANs-C.html)，文章在不同判别器的设计上让人影响深刻；
+音频到图像的代表作有[CMAV](https://arxiv.org/abs/1704.08292)，文章首次实现音频和图像的模态转换生成，论文解读在[这里](http://veigar1992.github.io/2018/04/18/CM-AV.html)；
+音频到视频的代表作有[Visual to Sound](https://arxiv.org/abs/1712.01393)，论文解读在[这里](http://veigar1992.github.io/2018/08/11/VEGAS.html)。
 
 音频到唇部运动视频的生成实现对于听觉障碍者是有用的，听力障碍的人在经过训练后可以通过人物唇部运动来猜测出发言者的言论。唇语的解读全靠人物唇部
 运动的观察与分析，所以唇部运动视频是有意义的。唇部运动离不开对应的音频，只有音频和唇部运动结合才是一段有意义的视频。Lip Movements Generation at a Glance

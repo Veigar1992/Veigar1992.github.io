@@ -6,7 +6,7 @@ tags: [code,GAN]
 description: 
 ---
 
-> SAGAN的论文（Self-Attention GAN）解读我们之前的[博客](http://www.twistedwg.com/2018/06/21/SAGAN.html)中已经写过了，今天我们来简单实现一下SAGAN的实验。
+> SAGAN的论文（Self-Attention GAN）解读我们之前的[博客](http://veigar1992.github.io/2018/06/21/SAGAN.html)中已经写过了，今天我们来简单实现一下SAGAN的实验。
 本实验的基础是在我的github上传的[tensorflow-GANs](https://github.com/TwistedW/tensorflow-GANs)的基础上完成的，所以只是简单的复刻，
 旨在说明如何实现并不强调调参和具体细节，所以代码只演示mnist数据集下的实验结果。
 
@@ -18,7 +18,7 @@ description:
 
 [tensorflow版本](https://github.com/taki0112/Self-Attention-GAN-Tensorflow)
 
-今天我的目的就是在我之前写的博客[GAN代码的搭建](http://www.twistedwg.com/2018/02/03/GAN-Network-code.html)系列的基础上加上Self-Attention部分即可，
+今天我的目的就是在我之前写的博客[GAN代码的搭建](http://veigar1992.github.io/2018/02/03/GAN-Network-code.html)系列的基础上加上Self-Attention部分即可，
 所以在框架基础不变的情况下完成SAGAN的功能。
 
 # SAGAN核心框架回顾 #

@@ -10,7 +10,7 @@ permalink: /pages/about.html
 	<hr>
 	<br>
 	<p>
-	博客<a href="https://github.com/TwistedW"><code>for by TwistedW</code></a>.
+	博客<a href="https://github.com/TwistedW"><code>fork by TwistedW</code></a>.
 	</p>
 	<br>
 	

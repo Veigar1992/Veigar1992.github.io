@@ -12,8 +12,8 @@ description:
 
 # 引入 #
 
-　　目前已发表文章中比较出名的生成自编码器（Generative Autoencoders）有两个，一个是很有名的VAE（之前[博客](http://www.twistedwg.com/2018/01/30/VAE.html)有简单提过，后续准备再详细写一篇关于VAE的博客），
-另一个就是AAE（之前[博客](http://www.twistedwg.com/2018/02/26/AAE.html)有写过）。
+　　目前已发表文章中比较出名的生成自编码器（Generative Autoencoders）有两个，一个是很有名的VAE（之前[博客](http://veigar1992.github.io/2018/01/30/VAE.html)有简单提过，后续准备再详细写一篇关于VAE的博客），
+另一个就是AAE（之前[博客](http://veigar1992.github.io/2018/02/26/AAE.html)有写过）。
 两种模型的整体思路都是在Autoencoder的基础上将Encoder得到的潜在空间使其服从先验分布。VAE通过KL缩小潜在向量与标准高斯分布间的距离，
 使得潜在向量服从$$N(0,1)$$分布；AAE通过GAN思想的引入，将先验分布视为正样本，Encoder得到的潜在空间视为假样本，通过对抗使得Encoder得到的潜在空间服从先验分布。
 但是这样得到的潜在空间一定严格服从先验分布吗？论文中用了may not回答了这个问题！

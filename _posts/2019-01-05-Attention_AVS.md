@@ -6,7 +6,7 @@ tags: [Audio]
 description: 
 ---
 
-> 音频和视频的同步是检验一场多媒体演示质量好坏的关键因素，这就像是没人希望花钱看一场音频和视频不对应的电影。然而多媒体演示的过程中，音频和视频信号通常由独立的工作流程管理 ，分开创作，处理，存储甚至传送到回放系统。这种独立操作增大了音视频同步性的考验，之前博客中分析的[语义关联判断的AVC](http://www.twistedwg.com/2018/11/26/L3Net.html)和[时序关联的AVTS](http://www.twistedwg.com/2018/12/12/AVTS.html)都是对音视频关联性判断的方法。今天介绍的[On Attention Modules for Audio-Visual Synchronization](https://arxiv.org/abs/1812.06071)是将Attention应用在音视频时序同步性的判断。
+> 音频和视频的同步是检验一场多媒体演示质量好坏的关键因素，这就像是没人希望花钱看一场音频和视频不对应的电影。然而多媒体演示的过程中，音频和视频信号通常由独立的工作流程管理 ，分开创作，处理，存储甚至传送到回放系统。这种独立操作增大了音视频同步性的考验，之前博客中分析的[语义关联判断的AVC](http://veigar1992.github.io/2018/11/26/L3Net.html)和[时序关联的AVTS](http://veigar1992.github.io/2018/12/12/AVTS.html)都是对音视频关联性判断的方法。今天介绍的[On Attention Modules for Audio-Visual Synchronization](https://arxiv.org/abs/1812.06071)是将Attention应用在音视频时序同步性的判断。
 
 # 论文引入
 
