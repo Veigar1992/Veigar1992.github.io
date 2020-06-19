@@ -1,0 +1,49 @@
+encoding: UTF-8
+
+permalink: /:year/:month/:day/:title.html
+paginate: 5
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
+highlighter: rouge
+
+
+# 作者信息
+author: 
+  name: Veigar1992
+  email: -
+  link: Veigar1992.github.io
+  zhihu: https://www.zhihu.com/people/wei-feng-jia
+  weibo: -
+  github: https://github.com/Veigar1992
+  github_username:  Veigar1992
+  weibo_username:  Veigar1992
+
+# 站点信息
+title : Veigar1992's Home
+description: 
+  学徒
+url: Veigar1992.github.io
+rss_url: /feed.xml
+
+# gavatar头像及Favicon
+gavatar : /assets/img/logo.jpg
+favicon : /assets/img/logo.png
+
+# disqus 设置
+#disqus:
+#  shortname: blademastercoder
+
+#profile 个人信息
+
+profile_desc : 学徒 <br /> 前行<br> #QQ交流群：701451028<br>
+
+# 首页除了最新文章外显示分类
+cates: 
+- Essay
+
+# 中文本地化
+locals: 
+   newest : 最新文章
