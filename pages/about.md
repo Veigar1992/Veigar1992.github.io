@@ -55,6 +55,15 @@ permalink: /pages/about.html
 			</td>  
 		</tr>
 
+		<tr>
+			<td>
+				zhihu：
+			</td>  
+			<td>
+				<a href="{{ site.author.zhihu }}" target="_blank">https://www.zhihu.com/people/wei-feng-jia</a>
+			</td>  
+		</tr>
+
 	</table>
 
 
