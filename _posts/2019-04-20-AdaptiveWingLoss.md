@@ -11,7 +11,7 @@ description: ICCV2019
 
 # 论文贡献
 
-1. 受Wing Loss启发，提出针对热图的Adaptive Wing Loss；
+1. 受Wing Loss[1]启发，提出针对热图的Adaptive Wing Loss；
 2. 为了解决前景像素和背景像素之间的不平衡问题，提出了Weighted Loss Map；
 3. 提出将边界boundary和CoordConv的训练方式。
 
@@ -64,5 +64,29 @@ wing loss是人脸关键点回归方式的loss，预测值的范围为0-1。wing
 
 以上两点，单一的loss并不能同时满足，因此loss能适应GT heatmap的不同像素强度，这就是Adaptive Wing Loss提出的思路。且值得注意的是，该公式为heatmap的值为0-1的情况。
 
+# Weighted loss map
 
+在热图上，前景像素站的比例极少，仅有1.2%，因此假如每个像素的weight一样，就会出现不平衡，导致训练收敛缓慢和性能不佳。
+
+<p align="center">
+    <img src="/assets/img/AWing/loss_map_mask.png">
+</p>
+
+<p align="center">
+    <img src="/assets/img/AWing/weight_loss.png">
+</p>
+
+<p align="center">
+    图4.Weighted loss map
+</p>
+
+# Boundary 和 CoordConv
+
+添加Boundary prediction作为未来的一个子任务。
+
+进一步提高精度。
+
+# 参考文献
+
+[1] Zhen-Hua Feng, Josef Kittler, Muhammad Awais, Patrik Huber, and Xiao-Jun Wu. Wing loss for robust facial landmark localisation with convolutional neural networks. In The IEEE Conference on Computer Vision and Pattern Recognition (CVPR), June 2018
 
